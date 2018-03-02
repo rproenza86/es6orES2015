@@ -1,6 +1,7 @@
 /**
  * Rest parameter
- * The rest parameter, also written with three consecutive dots ( ... ), allows you to represent an indefinite number of elements as an array. This can be helpful in a couple of different situations.
+ * The rest parameter, also written with three consecutive dots ( ... ), allows you to represent an indefinite number of elements as an array. 
+ * This can be helpful in a couple of different situations.
 
  * One situation is when assigning the values of an array to variables. For example,
  */

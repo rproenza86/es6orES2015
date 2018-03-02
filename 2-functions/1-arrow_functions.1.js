@@ -12,7 +12,7 @@ upperizedNames = ['Farrin', 'Kagure', 'Asser'].map(
 
 /**
  * Problem with this scope:
- * Issue: 'this' scope predictibility depend on how the function is called
+ * Issue: 'this' scope predictability depend on how the function is called
  */
 // problem :
 var controller = {

@@ -1,6 +1,7 @@
 /**
  * Spread operator
- * The spread operator, written with three consecutive dots ( ... ), is new in ES6 and gives you the ability to expand, or spread, iterable objects into multiple elements.
+ * The spread operator, written with three consecutive dots ( ... ), is new in ES6 and gives you the ability to expand, or spread, iterable objects 
+ * into multiple elements.
  */
 
 const books = ["Don Quixote", "The Hobbit", "Alice in Wonderland", "Tale of Two Cities"];
@@ -12,7 +13,8 @@ console.log(...primes);
 // Prints: 2 3 5 7 11 13 17 19 23 29
 
 /**
- * If you look at the output from the examples, notice that both the array and set have been expanded into their individual elements. So how is this useful?
+ * If you look at the output from the examples, notice that both the array and set have been expanded into their individual elements. 
+ * So how is this useful?
  */
 
 
