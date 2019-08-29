@@ -1,11 +1,11 @@
 /**
  * Sets
- *  In ES6, there’s a new built-in object that behaves like a mathematical set and works similarly to an array. 
+ *  In ES6, there’s a new built-in object that behaves like a mathematical set and works similarly to an array.
  *  This new object is conveniently called a "Set". The biggest differences between a set and an array are:
         - Sets are not indexed-based - you do not refer to items in a set based on their position in the set
         - items in a Set can’t be accessed individually
 
- *  Basically, a Set is an object that lets you store unique items. You can add items to a Set, remove items from a Set, 
+ *  Basically, a Set is an object that lets you store unique items. You can add items to a Set, remove items from a Set,
  *  and loop over a Set. These items can be either primitive values or objects.
  */
 var s = new Set();
@@ -53,8 +53,8 @@ console.log(games); // Set {'Banjo-Kazooie', 'Mario Kart', 'Banjo-Tooie', 'Age o
 games.clear()
 console.log(games); // Set {}
 
-/* 
-TIP: If you attempt to .add() a duplicate item to a Set, you won’t receive an error, but the item will not be added to the Set. 
+/*
+TIP: If you attempt to .add() a duplicate item to a Set, you won’t receive an error, but the item will not be added to the Set.
      Also, if you try to .delete() an item that is not in a Set, you won’t receive an error, and the Set will remain unchanged.
 
     .add() returns the Set if an item is successfully added. On the other hand, .delete() returns a Boolean (true or false) depending on successful deletion.
@@ -80,10 +80,10 @@ console.log(months.has('September')); // true
     Finally, use the .values() method to return the values in a Set. The return value of the .values() method is a SetIterator object.
  */
 console.log(months.values()); // SetIterator {'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'}
-/* 
-    TIP: The .keys() method will behave the exact same way as the .values() method by returning the values of a Set within a new Iterator Object. 
-    The .keys() method is an alias for the .values() method for similarity with maps. 
-    
+/*
+    TIP: The .keys() method will behave the exact same way as the .values() method by returning the values of a Set within a new Iterator Object.
+    The .keys() method is an alias for the .values() method for similarity with maps.
+
     You’ll see the .keys() method later in this lesson during the Maps section
 */
 

@@ -1,9 +1,9 @@
 /**
  * Maps
-    If Sets are similar to Arrays, then Maps are similar to Objects because Maps store key-value pairs similar 
-    to how objects contain named properties with values.
+    If Sets are similar to Arrays, then Maps are similar to Objects because Maps store key-value pairs similar
+    to how objects contain namedn properties with values.
 
-    Essentially, a Map is an object that lets you store key-value pairs where both the keys and the values can be objects, 
+    Essentially, a Map is an object that lets you store key-value pairs where both the keys and the values can be objects,
     primitive values, or a combination of the two.
  */
 
@@ -39,12 +39,12 @@ console.log(employees); //Map {'james.parkes@udacity.com' => Object {...}, 'juli
 employees.clear()
 console.log(employees); // Map {}
 
-/* 
-    TIP: If you .set() a key-value pair to a Map that already uses the same key, you won’t receive an error, 
-         but the key-value pair will overwrite what currently exists in the Map. Also, if you try to .delete() a key-value 
+/*
+    TIP: If you .set() a key-value pair to a Map that already uses the same key, you won’t receive an error,
+         but the key-value pair will overwrite what currently exists in the Map. Also, if you try to .delete() a key-value
          that is not in a Map, you won’t receive an error, and the Map will remain unchanged.
 
-    The .delete() method returns true if a key-value pair is successfully deleted from the Map object, and false 
+    The .delete() method returns true if a key-value pair is successfully deleted from the Map object, and false
     if unsuccessful. The return value of .set() is the Map object itself if successful.
 */
 
@@ -79,8 +79,8 @@ console.log(members.get('Evelyn')); // 75.68
 
 /**
  * 1. Using the MapIterator
-    Using both the .keys() and .values() methods on a Map will return a new iterator object called MapIterator. 
-    You can store that iterator object in a new variable and use .next() to loop through each key or value. 
+    Using both the .keys() and .values() methods on a Map will return a new iterator object called MapIterator.
+    You can store that iterator object in a new variable and use .next() to loop through each key or value.
     Depending on which method you use, will determine if your iterator has access to the Map’s keys or the Map’s values.
  */
 let iteratorObjForKeys = members.keys();
@@ -106,8 +106,8 @@ for (const member of members) {
    ['Marcus', 10.25]
 */
 /**
- * NOTE: when you use a for...of loop with a Map, you don’t exactly get back a key or a value. 
- *      Instead, the key-value pair is split up into an array where the first element is the key and 
+ * NOTE: when you use a for...of loop with a Map, you don’t exactly get back a key or a value.
+ *      Instead, the key-value pair is split up into an array where the first element is the key and
  *      the second element is the value. If only there were a way to fix this?
  */
 
@@ -146,8 +146,8 @@ members.forEach((key, value) => console.log(key, value));
 
 /**
  * Initialization
- * The Map(..) constructor can also receive an iterable, which must produce a list of arrays, where the first item in each array is the key and 
- * the second item is the value. 
+ * The Map(..) constructor can also receive an iterable, which must produce a list of arrays, where the first item in each array is the key and
+ * the second item is the value.
  */
 var m2 = new Map( m.entries() );
 
@@ -172,7 +172,7 @@ m.get( y );						// "bar"
 
 /**
  * Map Values
- * 
+ *
  * return the values of each pair in an array
  */
 var m = new Map();
@@ -191,7 +191,7 @@ Array.from( m.values() );		// ["foo","bar"]
 
 /**
  * Map Entries
- * 
+ *
  * return the pairs in an array
  */
 var m = new Map();

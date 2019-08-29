@@ -7,15 +7,16 @@
 const sym1 = Symbol('apple');
 console.log(sym1); // PRINT: Symbol(apple)
 
-// NOTE: This will create a unique symbol and store it in sym1. The description "apple" is just a way to describe the symbol, but it can’t be used to access the symbol itself.
+// NOTE: This will create a unique symbol and store it in sym1. The description "apple" is just a way to describe the symbol, but it can’t be used to access
+// 				the symbol itself.
 
 // How it works:
 const sym2 = Symbol('banana');
 const sym3 = Symbol('banana');
 console.log(sym2 === sym3); // PRINT: false
 
-// Ex. 1 
-//      The bowl contains fruit which are objects that are properties of the bowl. 
+// Ex. 1
+//      The bowl contains fruit which are objects that are properties of the bowl.
 let bowl = {
     'apple': { color: 'red', weight: 136.078 },
     'banana': { color: 'yellow', weight: 183.15 },
@@ -29,7 +30,7 @@ bowl = {
     'banana': { color: 'yellow', weight: 176.845 }
 };
 console.log(bowl); // PRINT: Object {apple: Object, banana: Object, orange: Object}
-//Instead of adding another banana to the bowl, our previous banana is overwritten by the new banana being added to the bowl. 
+//Instead of adding another banana to the bowl, our previous banana is overwritten by the new banana being added to the bowl.
 
 //To fix this problem, we can use symbols.
 bowl = {
@@ -40,7 +41,8 @@ bowl = {
 };
 console.log(bowl); // PRINT: Object {Symbol(apple): Object, Symbol(banana): Object, Symbol(orange): Object, Symbol(banana): Object}
 
-// NOTE: By changing the bowl’s properties to use symbols, each property is a unique Symbol and the first banana doesn’t get overwritten by the second banana.
+// NOTE: By changing the bowl’s properties to use symbols, each property is a unique Symbol and the first banana doesn’t get overwritten by the second
+// 				banana.
 
 
 
@@ -57,7 +59,7 @@ evthub.listen( EVT_LOGIN, function(data){
 // The benefit here is that EVT_LOGIN holds a value that cannot be duplicated (accidentally or otherwise) by any other value, so it is impossible for there to be any confusion of which event is being dispatched or handled.
 
 /**
- * Symbol.for(..) looks in the global symbol registry to see if a symbol is already stored with the provided description text, and returns it if so. 
+ * Symbol.for(..) looks in the global symbol registry to see if a symbol is already stored with the provided description text, and returns it if so.
  * If not, it creates one to return. In other words, the global symbol registry treats symbol values, by description text, as singletons themselves.
  */
 const EVT_LOGIN = Symbol.for( "event.login" );
